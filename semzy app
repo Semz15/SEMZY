@@ -1,0 +1,19 @@
+# Student Notes Web App
+
+A full-stack web app for summarizing textbooks, extracting definitions & formulas, and saving notes securely.
+
+## 🚀 Features
+- Upload textbooks (PDF/DOCX)
+- AI-powered summarization (Hugging Face)
+- Bullet-point study notes
+- Keyword extraction (definitions & formulas)
+- Secure authentication (JWT)
+- Notes stored in MongoDB Atlas
+- Export notes to PDF/Word
+
+## 🛠️ Setup
+
+### Backend
+```bash
+cd backend
+npm install
