@@ -1,0 +1,30 @@
+student-notes-app/
+│
+├── backend/                # Node.js + Express backend
+│   ├── server.js           # Main server file
+│   ├── db.js               # MongoDB connection
+│   ├── parser.js           # PDF/DOCX parsing
+│   ├── summarizer.js       # Hugging Face summarization
+│   ├── extractor.js        # Keyword extraction
+│   ├── formatter.js        # Bullet-point formatter
+│   ├── models/
+│   │   ├── User.js         # User schema
+│   │   └── Note.js         # Notes schema
+│   ├── uploads/            # Uploaded files (temporary storage)
+│   ├── package.json        # Backend dependencies
+│   └── .env.example        # Environment variables template
+│
+├── frontend/               # React frontend
+│   ├── src/
+│   │   ├── App.js          # Main app with routes
+│   │   ├── Login.js        # Login form
+│   │   ├── Register.js     # Register form
+│   │   ├── Dashboard.js    # Student dashboard
+│   │   └── Upload.js       # Upload component
+│   ├── public/
+│   │   └── index.html      # Root HTML file
+│   ├── package.json        # Frontend dependencies
+│   └── .env.example        # API URL config
+│
+├── README.md               # Project overview & setup guide
+└── .gitignore              # Ignore node_modules, .env, uploads
