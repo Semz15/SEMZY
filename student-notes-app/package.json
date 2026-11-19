@@ -1,0 +1,9 @@
+{
+  "name": "semzy-demo",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm start",
+    "install-backend": "cd backend && npm install",
+    "dev": "cd backend && npm run dev"
+  }
+}

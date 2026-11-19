@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEMZY — Student Notes</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    :root { --navy:#17233c; --blue:#526fe8; --pale:#eef3ff; --line:#dfe5ef; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; color:#17233c; background:#f7f9fc; }
+    button,input { font:inherit; }
+    .topbar { height:68px; display:flex; align-items:center; justify-content:space-between; padding:0 5%; background:white; border-bottom:1px solid var(--line); }
+    .brand { font-size:24px; font-weight:800; letter-spacing:1px; color:var(--navy); }
+    .brand span { color:var(--blue); }
+    .container { max-width:1100px; margin:32px auto; padding:0 20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .card { background:white; border:1px solid var(--line); border-radius:14px; padding:22px; box-shadow:0 8px 24px rgba(35,51,84,.06); }
+    .auth { max-width:440px; margin:80px auto; }
+    h1,h2,h3,p { margin-top:0; }
+    input { width:100%; padding:12px 14px; border:1px solid #ccd5e5; border-radius:8px; margin:7px 0 14px; }
+    button { border:0; border-radius:8px; background:var(--blue); color:white; padding:11px 16px; cursor:pointer; }
+    button.secondary { background:#edf1f7; color:var(--navy); }
+    button.danger { background:#b83d50; }
+    .muted { color:#69758b; }
+    .tabs { display:flex; gap:8px; margin-bottom:18px; }
+    .tabs button { background:#edf1f7; color:var(--navy); }
+    .tabs button.active { background:var(--blue); color:white; }
+    .keyword { display:inline-block; margin:4px 6px 4px 0; padding:5px 9px; border-radius:999px; background:var(--pale); color:#4057b5; font-size:13px; }
+    .note-list { display:grid; gap:14px; }
+    .note-head { display:flex; justify-content:space-between; gap:12px; }
+    ul { padding-left:20px; line-height:1.55; }
+    .error { color:#b83d50; margin:8px 0; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" src="/src/App.js"></script>
+</body>
+</html>
